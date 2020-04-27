@@ -1,0 +1,39 @@
+=========================================
+//서블릿의 get으로 접근하고 가져가는 값이 없을 때 사용
+<a href = "실행할 서블릿이나 jsp파일 이름"><button type="button">  '버튼 이름'  </button></a>
+
+=========================================
+//여러 정보를 가져가야할 때 (post와 get 방식 설정 가능)
+<form>
+	<input type="text" name = "  '파라미터맵이름'  "/><br>
+	<input type="password" name = "  '파라미터맵이름'  "/><br>
+	<button onclick="  '스크립트에 접근해 실행할 메서드 이름-여기서는login_go'  (this.form);">  '버튼 이름'  </button>
+</form>
+<script>
+	function login_go(form){
+		form.method="post";	<-post로 보낼거면 post 아니면 get
+		form.action="  '실행할 서블릿이나 jsp파일이름 (위에 herf=부분)'  "; <-위에 herf=부분
+		form.submit();
+	};
+</script>
+=========================================
+//하나의 정보만 가져갈 때 (post와 get 방식 설정 가능)
+<form method="post" action= "  '실행할 서블릿이나 jsp파일이름 (위에 herf=부분)'  ">
+	<button type="submit" name="  '파라미터맵이름'  " value="  '보내고 싶은 정보'  ">고고</button></a>
+</form>
+
+============================================
+
+
+
+<form method="post" action= "main">
+	<input type="text" name=" " value=" " style="display:none;">
+	<input type=hidden name=" " value=" ">
+	<button type="submit" name=" " value=" "> "버튼이름" </button></a>
+</form>
+
+<form action="main" method="get">
+	<a href="javascript:;" onclick="parentNode.submit();"><%= vo.getId() %></a>
+	<input type="hidden" name="id" value="<%= vo.getId() %>"/>
+	<input type="hidden" name="section" value="3"/>
+</form>

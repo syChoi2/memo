@@ -1,0 +1,18 @@
+
+UDP=====================
+꼭 있어야하는 부분
+중복되도 되는 부분 // 한번만 있어야하는 부분
+
+
+
+RMI===============
+뭐할때 사용하는지... 사용 예제  == 객체나 리스트를 그냥 보낼 수있따
+unicastremoteObject
+
+stub 자동생성
+
+rmi_server\bin
+
+rmic com.test.rmi.server.RemoteServer
+
+rmic -keepgenerated com.test.rmi.server.RemoteServer

@@ -1,0 +1,51 @@
+접근제어자
+에러와 exception // 정확하게 언제가 runtime인지
+-----------------------------------------------
+eclipse 개발환경 구축 
+1.encoding
+2.compiler/ buildPath
+3.server
+4.browser
+5.template
+6.server->source->connector/port
+----------------------
+표현층 presentation layer
+처리층 business layer
+저장층(?) repository layer
+
+Enumeration 인터페이스 정리===============
+Enumeration 인터페이스는 객체들의 집합(Vector)에서 각각의 객체들을 한순간에 하나씩 처리할 수 있는 메소드를 제공하는 켈렉션이다.
+boolean hasMoreElements() 
+Object nextElement() 
+출처: http://hyeonstorage.tistory.com/210 [개발이 하고 싶어요]
+---------------------------------------------------------
+ServletRequest와 HttpServletRequest의 구분========
+ServletRequest는 기본적인 클라이언트 요청에 관한 모든 정보를 가지고 있습니다. 그리고 이 인터페이스는 다시 HttpServletRequest로 확장하여 HTTP프로토콜상에서 할 수 있는 일들이 포함되어져 있습니다.
+
+ServletRequest의 구조============
+-클라이언트 자체에 대한 정보추출
+-클라이언트가 전송한 정보 추출
+
+HttpServletRequest의 기능별 분류===========
+-request객체의 요청 파라미터
+-request객체의 HTTP 헤더
+-request객체의 세션 데이터
+-request객체의 쿠키
+-request객체의 요청에 사용된 URL/URI
+출처: http://allinfo.tistory.com/494 [평범함과 비범함의 차이]
+---------------------------------------------------
+1. getSession(), getSession(true)
+ - HttpSession이 존재하면 현재 HttpSession을 반환하고 존재하지 않으면 새로이 세션을 생성합니다
+
+2. getSession(false)
+ - HttpSession이 존재하면 현재 HttpSession을 반환하고 존재하지 않으면 새로이 생성하지 않고 그냥 null을 반환합니다
+http://www.mimul.com/pebble/default/2006/07/20/1153394700000.html
+---------------------------------------------------
+Filter 사용법================
+1 xml에 등록 
+2 doFilter에서 거른다
+3 chain.doFilter로 다음 filter나 servlet으로 이동
+
+4 제외시키고 싶으면 내부(class)에서 직접 제외시켜야한다.
+5 filter를 implement하는 abstract class를 사용하자 (web.xml 제외할 페이지들을 parameter로 정해놓고 tokenizer로 받는다)
+6 5번의 class를 extends해서 사용하자 (if문 사용)

@@ -1,0 +1,13 @@
+anchor태그 연습
+
+환경변수 - javahome// path
+(java-2기가)eclipse -구성설정- 기가할당 변경
+oracle - service.msc
+
+
+ipconfig
+
+CSS(폐쇄성)
+공간활용
+디자인
+실용성

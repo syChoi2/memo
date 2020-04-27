@@ -1,0 +1,10 @@
+
+String msg = "message";
+out.println("<script>alert('"+msg+"');</script>");
+
+========================
+function login_go(){
+	document.loginForm.method="post";
+	document.loginForm.action="<%= request.getContextPath()%>login";
+	document.loginForm.submit();
+};

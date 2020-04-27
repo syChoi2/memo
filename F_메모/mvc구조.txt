@@ -1,0 +1,5 @@
+==mvc ±¸Á¶== (model-view-controller)
+
+dao	data access object	== model
+biz	business moduler	== controller
+cmd	commend		== view

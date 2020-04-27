@@ -1,0 +1,15 @@
+ibaitis  <- 유효성 검사 마무리 (0일때 fail나오는 거 처리)
+
+
+데이터 인풋/아웃풋 스트림과  file인풋아웃풋스트림다른점
+
+
+utf 데이터형식?
+
+os.write / is.read
+dos.writeUTF / dis.writeUTF
+fos / fis
+outPacket / inPacket
+
+udp - 순서 엇갈림, 에러 도출 불가, 유실이 있어도 치명적이지 않으면서 빠른 속도가 필요할 때 사용
+

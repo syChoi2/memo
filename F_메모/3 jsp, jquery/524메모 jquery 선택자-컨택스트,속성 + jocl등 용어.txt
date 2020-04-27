@@ -1,0 +1,31 @@
+$(선택자,[컨텍스트])  선택자로 작업대상 엘리먼트를 검색한다
+ $(‘p’, this)  ->  this안에 p  this가 부모가 됨 
+
+$(선택자[속성="값"]) 선택자 안의 속성
+select[name='lprod'] 
+
+
+joinMember
+checkId
+selectZip
+
+
+jocl  - Java bindings for OpenCL
+=========================
+
+jsp-> 소스부분을 컨트롤러단으로 뺐다
+php는?
+
+-----------
+공부할것 애매한 개념
+gof  -  디자인패턴 - 싱글톤/팩토리/탬플릿 메서드/전략
+
+spring framework
+
+byte-bit 등등 개념
+===================
+서버-프로그래밍 언어 - DB
+
+
+서울에 있는 회사가 좋아하는/원하는 포트폴리오는?
+

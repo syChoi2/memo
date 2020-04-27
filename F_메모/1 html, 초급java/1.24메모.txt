@@ -1,0 +1,53 @@
+*=폰트=*
+속성/ 축약기법-스타일 웨이트 사이즈 패밀리 순으로
+
+*=텍스트=*
+정렬align
+장식decoration
+변환transform
+그림자 shadow
+word wrapping word-wrap
+다중컬럼 column-count
+
+*=박스모델과 응용=*
+박스모델
+-마진-경계-페딩-컨텐츠
+-마진-배경색-배경이미지-내용
+
+*경계선(<스타일style, 폭width, 색상color>, 둥근경계선radius, 그림자shadow, )
+*배경background
+*요소 크기 설정-width height **
+
+
+*=마진과 패딩=*
+margin
+padding
+border
+content
+
+*=수평 정렬=*
+인라인/ 블록요소
+
+
+질문
+블럭-인라인/ div-p/ 박스- 차이
+
+
+과제
+다음주 주말까지 가위바위보 게임을 만들어온다
+스트링 비교 x
+나머지연산자	%	(나머지정리이용 )
+정성적을->정량적으로 바꿔야함   count 또는 numbering (좋아요5 싫어요1)
+
+
+3 가위
+5 바위
+7 보
+
+
+
+a % a = 0
+
+a+1 % a=1
+
+a+2 % a=2

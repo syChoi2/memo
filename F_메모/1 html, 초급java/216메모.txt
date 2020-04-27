@@ -1,0 +1,5 @@
+list.add() /.remove() -> list¿¡ Ãß°¡		print(list)
+stack.push() / .pop()		while(!stack.empty){sys.o.print(stack.pop());}
+queue.offer() / .poll()		while(!queue.isEmpty()){sys.o.print(queue.poll());}
+set.add()				sys.o.print(set)
+hashmap.put() / .remove()

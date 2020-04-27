@@ -1,0 +1,16 @@
+db import export
+exp nonage/nonage file=c:\backup.dmp
+
+imp system/java fromuser=nonage touser=nonage file=c:\backup.dmp
+
+
+
+
+part
+cos.jar
+fileupload.ar
+spring handler
+
+1024 byte = 1kb
+1024kb = 1mb
+1024mb = 1gb

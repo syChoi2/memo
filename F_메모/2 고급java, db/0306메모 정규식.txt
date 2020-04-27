@@ -1,0 +1,8 @@
+//패턴 등록
+//      Pattern p = Pattern.compile("[a-z]*");
+      
+      //정규식으로 대상 비교
+//      Matcher m = p.matcher("asdf");
+
+
+System.out.println(Pattern.matches("[a-z]{2,3}", s1)); //false

@@ -1,0 +1,42 @@
+javac 컴파일
+java 실행
+javaw jvm에 보냄
+javax ??  - servlet ??
+java interpreter
+----------------------------------------------------
+ide integrated development engine(?)
+
+jvm -가상적인 cpu - 플랫폼에 독립적 / 자바 바이트코드를 실행
+램에 종속(?)
+
+asp active server page
+php Power Hypertext Preprocessor
+jsp java server page   /자바+html 파일
+----------------------------------------------------
+
+api application programming interface
+
+---------------------------------------------
+was(톰켓)가 jsp파일을 servlet(서블렛)형태의 .java로 변환  (java를 class파일로 컴파일 하기위해 jdk,jre가 필요하다)
+.jsp->.java->.class -> html형식으로 브라우저에 송신
+
+servlet - 클라이언트 요청을 처리하고 그 결과를 다시 클라이언트에게 전송하는 Servlet 클래스의 구현 규칙을 지킨 자바 프로그램"
+
+-----------------------------------------------------
+webapps - docs/manager/root(/)  = WebContent
+conf - 설정파일
+
+워크스페이스 -> 톰켓시스템폴더에 미러링!
+workspace\jsp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\guest_book
+workspace\jsp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\work\Catalina\localhost\_\org\apache\jsp
+
+-------------------------------------------------
+servlet
+
+톰캣은 사용자의 요청이 오게되면 그 요청을 받아 그 안에 데이터를 httpServletRequest에 넣어 준다.
+자신이 보내는 응답을 보내면 그 안에 데이터를 httpServletRequest에 넣어 준다.
+
+----------------------------------
+인터넷 주소상의 구분자는 '/'
+
+http://ip:포트/(프로젝트명)/주소경로

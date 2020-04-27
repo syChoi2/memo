@@ -1,0 +1,7 @@
+servlet을 쓰는 이유는
+web.xml을 사용하기 위해서?
+web.xml의 위치 이유와 이녀석의 기능
+
+
+servlet은 server가 실행될 때 compile? 돼서 upload 된다.
+이때 web.xml이 실행된다..?

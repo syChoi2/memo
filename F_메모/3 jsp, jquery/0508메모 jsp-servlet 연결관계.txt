@@ -1,0 +1,30 @@
+DOM
+: HTML 문서를 객체로 표현한 것
+ 
+BOM (Browser Object Model)
+: 웹브라우저를 객체로 표현한 것
+-----------------------------------------
+
+클라이언트에서 오는 요청 - > servlet
+화면 구성 -> jsp
+
+jsp안에서 처리할 때 -> 속성 request.setAttribute
+화면에서 받을 때 -> 매개변수 request.getParameter
+----------------------------------
+서블릿-> jsp -> html..?
+-----------------------------------
+
+localhost/login(login.servlet) -> test.jsp-> login.servlet//doPoset->login.jsp
+
+초기 창으로 접근- request (get) 사용자는 "/"(루트)경로로 접근하고->루트경로 안에 jsp파일이 들어있다.
+
+http://localhost/test.jsp ->	LoginServlet.java (@webServlet("/login")) <-tomcat이 실행할 때 아래 클래스들을 다 로드해 놓는다.
+			test.jsp->test.java<-Servlet("test.jsp")
+		                          ->test.class-(out.write)->HTML(text/html)
+
+@webServlet은 URL일 뿐
+사용자는 html문서에 내용을 기입한다-> doPost or doGet -> 데이터를 다룰수있게 서버측에 servlet에 전달 -> serlvet에서 servie 와 dao에 접근 ->조회 내용을 jsp 파일 형태로 request ->> tomcat은 jsp 파일을 클라이언트가 볼수있게 .java  로 그리고 .class 파일로 바꾼다
+-----------------------------------
+질문...
+request, response 의 사용법
+Mapping이란 (의 개념)?

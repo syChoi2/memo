@@ -1,0 +1,38 @@
+데이터 입력받는 법 3가지
+1. system.in.read
+
+int a = System.in.read();     <- int 형으로 받아지기 때문에 char형으로 형변환 필요
+char a1= (char) b
+
+char a = (char)System.in.read();    <- 한번에 쓰기
+
+--------------------
+2. BufferedReader
+
+
+--------------------
+3. Scanner
+
+java.util.Scanner;   <-import 필요
+
+Scanner 변수명 = new Scanner (System.in);
+
+
+//String을 받을 때
+String 변수명 = 스캐너의 변수명.next();   <- 문자 또는 문자열을 공백을 기준으로 한 단어 또는 한 문자씩 입력 받는다.
+String 변수명 = 스캐너의 변수명.nextLine();   <-문자 또는 문장 한 라인 전체를 입력받는다.
+
+
+//인트를 받을 때
+int 변수명 = 스캐너의 변수명.nextint();
+
+
+//캐릭터 받을 때
+char 변수명 = 스캐너의 변수명.next().charAt(0);  <- char값을 불러온다. // .charAt(n)의 응용
+
+//기타
+스캐너의 변수명.next().trim()      <-문자열 양끝에 존재하는 공백을 제거해준다. 
+스캐너의 변수명.next().charAt(n) <- 입력 값의 n번째 인덱스에 존재하는 문자를 가져온다=>문자형
+
+
+nextInt()

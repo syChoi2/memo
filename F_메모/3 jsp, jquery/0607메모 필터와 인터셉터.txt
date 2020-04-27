@@ -1,0 +1,18 @@
+servlet 보다 fillter를 먼저 처리
+https://sbsjavaprg.wordpress.com/2014/02/18/%EC%84%9C%EB%B8%94%EB%A6%BF-%ED%95%84%ED%84%B0filter-%EC%84%A4%EB%AA%85-%EB%B0%8F-%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95/
+
+필터와 인터셉터
+http://changpd.blogspot.kr/2013/03/spring.html
+
+
+characterEncoding
+sitemesh
+인증(사용자 인증)
+로깅 및 감사 필터(logincheck)
+이미지 변환
+데이터 압축
+암호화 필터
+토크나이징(Tokenizing) 필터
+XML 컨텐츠를 변형하는 XSLT 필터
+Mime-Type 체인 필터
+URL 및 기타 정보들을 캐시하는 필터

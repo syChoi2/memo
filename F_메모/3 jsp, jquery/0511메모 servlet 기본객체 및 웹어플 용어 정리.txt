@@ -1,0 +1,25 @@
+request - 페이지 넘어갈 시 요청하면 (forward/redirect)
+pagecontext
+application - tomcat이 시작되고 끝날 때까지
+session - session이 시작되고 끝날 때 (login-logout/browseron-off)
+
+버튼/링크 등등(주소줄 대신 요청)
+
+was - servlet컨테이너를 포함
+
+webcontainer 사용자의 요청을 담아서  servlet에 보냄
+
+jsp저장시 바로 tomcat에 전달해서 servlet을 만들어서 compile(.class파일)
+
+javac interpreter  javaw
+
+서버구동시 jsp(servlet container)를 다 서버에 올려놓는다
+이때 class file을 다 compile 해 놓는다.
+
+
+프로젝트에 대한 설정 - server
+
+
+
+ajax
+jsp

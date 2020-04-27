@@ -1,0 +1,26 @@
+XHR(XML HTTP REQUEST )
+
+markup-language
+
+
+out.print(",");
+out.write(",");
+
+
+dbcp- DataBase ConnectionPool
+jocl
+
+simple
+jmdl
+
+
+iot internet of things
+m&a merging & acquisition
+
+orm-object relational mapping 객체 관계 맵핑
+
+Rdbms-관계형 데이터베이스
+
+
+
+spring mvc  <-----> orm framework Ibatis

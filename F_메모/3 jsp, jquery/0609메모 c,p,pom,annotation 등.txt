@@ -1,0 +1,40 @@
+c: constructor (생성자)
+p: properties (set method)
+
+pom.xml로 build 관리를 한다.
+properties
+-repositories -특정위치 해당경로를 지정
+-properties -버전을 관리하기 위해 해당 스키마를 작성하면서 value를 주게 되는데 스키마 자체를 ${}로 가져올 수 있다.
+	여러 jar들을 하나의 버전으로 관리하고자 할때 사용
+-dependencies
+--------------------------------------------------------
+@Controller
+-@RequestMapping(value="/join",method=RequestMethod.POST)
+--@RequestParam(value="name1",defaultValue="kim")
+
+----------------------------------------------------
+<context-param>을 셋 해주자 src/main/resources안에
+
+
+web단이 있다  -> src/main/webapp가 url의 "/"이다 (webContent와 동일한 위치)
+-------------------------------------------------------
+<bean><property>
+<bean><constructor-arg ref="">
+<bean id="" class="" p:##="" p:##=""/>
+-------------------------------------------------------
+
+@Scope("") -singleton/prototype
+
+annotation으로 bean에 등록하기============
+@Component() -> bean등록
+-@Repository() - DAO component
+-@Service() - service componet
+-@controller() -controller component
+
+@Autowired -> type을 보고 bean과 매칭 / 없으면 exception
+-@Autowired(required=false) -> 없으면 넣지 않음
+
+@Resources -> type으로 찾는게 아니라 이름을 찾는다.
+
+@inject -> required= 가 없기 때문에 무조건 존재해야 한다
+-@Named("") - 이름을 지정해 줄 수 있다.

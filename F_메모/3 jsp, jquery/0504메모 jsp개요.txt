@@ -1,0 +1,17 @@
+디렉티브 <%@ %>- 
+contentType - 출력시 출력할 문자 코딩
+import
+pageEncoding - 현 페이지의 작성된 인코딩형식 정보 (이 속성이 없으면 contentType으로 사용되는데 충돌의 요소가 있음)
+trimDirectiveWhitespaces
+
+
+스크립트 -
+스크립틀릿 <% %>
+표현식 (out.print) <%= %>
+선언부  <%! %>
+
+---------------------------------
+final -
+변수 - 한번만(초기화만 가능) 저장하는 변수
+메서드 - overriding x
+클래스 - extends x

@@ -1,0 +1,24 @@
+자바 질문 
+
+Vector<Product2> item = new Vector<Product2>();		// <Generic> 어떤 놈들로 채워져있는가를 알려줌 
+                                                                           // 캐스팅을 자동으로 다 해준다.                                         
+                                                                           //여러타입을 담을 때는 Generic을 안 써주는가?
+
+
+class Product{
+	int price;
+	int bonusPoint;
+	
+	Product(int price){
+		this.price = price;
+		this.bonusPoint = price/20;    // 원가 * 5/100    // 5/100 = 1/20 
+	}
+}
+
+class Tv extends Product{
+	Tv(){					
+		super(2000000);		//주소클래스의 생성자		
+					// 주소 클래스에 기본생성자가 없기 때문에? 있으면 안 써줘도 되는가?
+	}
+	
+

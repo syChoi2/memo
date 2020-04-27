@@ -1,0 +1,30 @@
+디렉티브 (자바로 보낼 때 알려줄 정보) - <%@>
+-인코딩형식
+-임포트
+
+스크립틀릿(메서드 안에 구현 (지역변수)) - <%>
+
+표현식(out.write대신) - <%=>
+
+선언부(서블릿 클래스 필드에 올라감/굳이 초기화를 하지 않아도 묵시적 초기화가 된다) - <%!>
+-----------------
+? x = * & y = *
+
+-----------------
+java resources -src -자바 소스
+webContent -웹, 브라우저 소스
+
+--------------------------
+D:\A_TeachingMaterial\7.JspSpring\workspace\jsp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\work\Catalina\localhost\_\org\apache\jsp
+-----------------------
+1.설치
+2.java ee
+3.preferences 설정
+4.server - tomcat 연동
+5.server.xml 설정
+6.서블릿 생성 (java resources - src)
+->서블릿 변환
+7.jsp 생성 (webContent)
+
+-----------------------
+html/java/jsp/servelet

@@ -1,0 +1,22 @@
+파일 입력받기
+1 cos-> MultipartRequest multi = new MultipartRequest(
+					request, 
+					savePath, 
+					maxSize,
+					"utf-8",
+					new DefaultFileRenamePolicy()
+				);
+2 input-output stream -> FileOutPutStream(file).write(byte b[], int off, int len)
+3 part.write(path+fileName)
+
+경로 설정
+-jsp에서 "/"는 도메인 부터
+-servlet에서는 root폴더 부터
+
+part
+-form의 모든 정보를 얻기 위해 사용
+-태그의 모든 부분을 
+
+exception
+1 throw
+2 try catch

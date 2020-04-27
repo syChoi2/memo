@@ -1,0 +1,21 @@
+<jsp:actionTag>
+===useBean===
+id = " vo 객체 명 "
+class = " vo 경로 " 
+scope = " page request session application "
+
+===setProperty===
+name = " vo 객체 명 "
+property = " vo안에 set할 변수의 이름 "   /    "*" <- request에서 넘어오는 값을 vo에 속성에 알맞게 setting한다
+value = " vo에 setting 될 값 "  <- 생략 가능(생략하면 넘어오는 값을 바로 적용)
+
+===getProperty===
+name = " vo 객체 명 "
+property = " vo안에 get할 변수의 이름 "
+
+
+c: => jstl(java standard tag library)
+
+
+el문을 사용하려면 set scope를 한번은 꼭 해줘야 한다.
+스크립틀릿에서는 el문을 사용할 수 없다

@@ -1,0 +1,38 @@
+이상으로 서블릿 필터의 사용법을 알아 봤습니다. 요청에 대한 처리로 많이 사용되는 것으로는 인코딩 변환, 로그인 여부확인, 권한 체크, XSS(Cross site script) 방어 등이 있습니다. 응답 처리에 많이 사용되는 것은 모든 페이지 내용에 공통적으로 특정 내용을 끼워넣는 작업 등에 많이 사용됩니다.
+또한 pipe and filter (http://www.dossier-andreas.net/software_architecture/pipe_and_filter.html) 아키텍처 스타일에 가까운 기술이고 pipe and filter의 목적은 유용하고 작은 component를 유연하게 결합하여 새로운 기능을 만드는데 있습니다. 
+외부 요청을 처리하는 방식을 유연하게 하기 위해 많이 사용됩니다.
+
+-------------------------------------
+
+인터셉터는 여러개를 사용할 수 있으며, 실행 순서는 <mvc:interceptors> 에 나오는 순서 입니다. 인터셉터를 주로 사용하는 곳은 로그인 체크, 권한 체크, 프로그램 실행시간 계산 작업 로그 처리, 업로드 파일 처리 등에 많이 사용됩니다.
+
+-------------------------------------
+
+AOP는 위에 말한 두 개의 관심사를 분리하여 처리하는 개념입니다
+AOP 작업 /로그를 기록/한다던지, 데이터베이스 /트랜잭션/을 요청의 앞에서 시작하고, 끝에서 /커밋 또는 롤백/을 한다던지 예외처리 하는 코드 
+1) 다수의 메서드나 클래스에서 로그를 기록하는 경우
+2) Single Responsibility Principle (SRP) 
+5) 기타
+- 하이버네티스와 JDBC를 같이 사용할 경우, DB 동기화 문제 해결
+- 멀티쓰레드 Safety 관련하여 작업해야 하는 경우, 메소드들에 일괄적으로 락을 설정하는 애스팩트
+- 데드락 등으로 인한 PessimisticLockingFailureException등의 예외를 만났을 때 재시도하는 애스팩트
+- 로깅, 인증, 권한 등
+=============================================================================================================
+AOP 정리 			http://isstory83.tistory.com/90
+AOP/filter/interceptor		http://doublesprogramming.tistory.com/133
+				출처: http://greatkim91.tistory.com/94 [행복한 아빠]
+				출처: http://pentode.tistory.com/85 [쉬고 싶은 개발자] (85~87)
+AOP Proxy			http://ooz.co.kr/201 [이러쿵저러쿵]
+AOP 트렌잭션/예외 처리 		https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:rte:fdl:aop:egovrteaopguide
+JDK Dynamic Proxy/CGLib Proxy	http://wiki.javajigi.net/pages/viewpage.action?pageId=1065
+AspectJ				http://wiki.javajigi.net/pages/viewpage.action?pageId=1081
+				https://m.blog.naver.com/PostView.nhn?blogId=tmondev&logNo=220558804255&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F
+				http://private.tistory.com/44
+=============================================================================================================
+aop 위빙 설정
+before
+after-returning
+after-throwing
+after
+around
+

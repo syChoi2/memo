@@ -1,0 +1,82 @@
+orm-object relational mapping 객체 관계 맵핑
+
+spring mvc  <-----> orm framework Ibatis 차이공부
+
+-------공부/알아보기---------
+빅데이터!
+맞춤형컨텐츠
+
+하둡
+map-reduce -job tracker / task tracker
+하둡 분산형 파일시스템(Hadoop Distributed Filesystem, HDFS)
+H카탈로그
+pig
+hive
+
+
+SQL [structured query language] 
+------------------------------------------------
+클러스터
+
+maven
+------------------------
+안드로이드 스튜디오
+
+------------------------------------써보기-------------------------------
+acid - atomicity /consistancy/isolation /durability
+mySQL- 한 계정에서 여러개의 스키마(DB) 생성 가능	// mariadb -mysql과 호환되는 db
+===========================================================================================
+noSQL(not only sql) -객체지향DBMS	//key value store/tabular컬럼기지향(?)그래프기반형(?)/document oriented문서지향형-json형식(?) /
+-조인 불가 / 복합트랜젝션불가/ 제약조건 불가 (application level에서 처리 돼야한다.)
+-빠름/ "대용량"/비구조적데이터-변화하는 구조/제약조건,트렌젝션,조인 필요없을때
+-사용하기 쉬움
+
+-scaling out 분산데이터베이스?
+=================================================================================
+MsSQL 
+
+---------------------------------------써보기-------------------------------
+
+다오를 두번써야하는 건 트랜젝션때문? ㅇㅋ
+
+----------------------------------------
+jsp와 jsp의 폴더 그리고 서블릿에서의 url경로의 관계 복습
+System.out.println(request.getContextPath());  ==> 루트를 반환
+
+jsp와 jsp의 폴더 그리고 서블릿에서의 url경로의 관계 복습
+
+redirecting- contextpath 를 해줘야함
+
+forwarding - 서버내에서 url처리 = "/"가 루트인지 안다
+
+경로 설정
+-jsp에서 "/"는 도메인 부터
+-servlet에서는 root폴더 부터
+----------------------------------------
+공부할것 애매한 개념
+gof  -  디자인패턴 - 싱글톤/팩토리/탬플릿 메서드/전략
+
+template pattern - 변경하고픈 부분만 abstract해놓고 각각 overriding한다
+factory pattern - 요청하는 instance를 찾아 생성해서 반환한다.
+front controller pattern
+command pattern
+------------------------
+접근제어자
+protected 
+private - 같은 클래스에서 사용할 때 / model에서
+public
+static
+
+private<default<protected<public
+static,final,abstract,
+----------------------------
+에러와 exception // 정확하게 언제가 runtime인지
+exception
+1 throw 던지면 호출한 곳으로 보낸다. try-catch 불필요
+2 try catch
+
+----------------------------
+byte-bit 등등 개념 
+1024 byte = 1kb
+1024kb = 1mb
+1024mb = 1gb

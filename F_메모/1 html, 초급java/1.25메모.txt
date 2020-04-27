@@ -1,0 +1,29 @@
+배경 설정하기
+attachment : scroll, fixed, local
+color
+image : url('')
+position:
+repeat : repeat, no-repeat,repeat-x, repeat-y
+size : width, height
+
+
+css
+-선택자
+-폰트
+-텍스트(위치 색깔 장식 변환 그림자)
+*-*박스모델(마진, 패딩, 보더)
+
+오늘 배운 것---
+-배경
+-테이블                    ->css로 만들어보기
+*-*레이아웃(display속성)
+--------------
+
+미들+ 레프트 =기본값
+
+박스 - (블럭, 인라인   ==   div, span)
+
+======================================================
+java
+정렬-오름차순,내림차순, 
+선택정렬

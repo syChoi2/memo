@@ -1,0 +1,5 @@
+method area (class-class변수&메서드) - 저장
+
+call stack (method)- 호출  >먼저 들어온 것이 나중에 나간다 // queue 뚤린구조  FIFO(LILO)
+
+heap (instance화-instance변수&메서드) -

@@ -1,0 +1,34 @@
+<jsp:include page="" flush=""/>   - 변수공유 불가능 (request.setAttribute 가능)
+<%@ include file="" %>	    - 변수공유 가능
+----------------
+1280 1924
+1024 768
+----------------
+overflow:~
+visible: 기본값으로 내용이 더 길어도 그대로 보입니다.(내용이 흘러넘침)
+hidden : 내용이 넘치면 자릅니다. 자른 부분은 보이지 않습니다.
+scroll : 내용이 넘치지 않아도 항상 스크롤바가 보입니다.
+auto : 내용이 잘릴 때만 스크롤바가 보입니다.
+---------------------
+jsp : 액션태그
+request.setCharacterEncoding("utf-8"); 
+
+<jsp:include page="" flush="">
+	<jsp:param name="" value="" / >
+</jsp:include>
+
+<jsp:forward page = "" />
+
+--------------------------
+jsp:include 파라미터 엔코딩
+URLEncoder.encode( '내용' );
+URLDecoder.decode(request.getParameter(menus.nextElement()));
+---------------------------
+서블릿에서 알럿창
+PrintWriter out=response.getWriter();
+out.println("<script>alert('"+request.getAttribute("msg")+"');</script>");
+-----------------------------
+포워드
+<jsp:forward page = "login" />
+<% request.getRequestDispatcher("login").forward(request, response); %>
+-------------

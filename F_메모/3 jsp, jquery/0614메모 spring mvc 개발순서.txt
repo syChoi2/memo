@@ -1,0 +1,35 @@
+﻿1. Spring mvc project 생성
+2. builder : pom.xml
+3. Spring Context loading / DispatcherServlet config : web.xml / servlet-context.xml /root-context.xml /dataSource-context.xml 
+4. dataSource : ibatis/DBCP2/Connection Pool : dataSource-context.xml, SqlMapConfig.xml
+5. Domain(VO)/DAO/Service -> root-context.xml (Bean 등록) :Map.xml (ibatis map)
+
+////////////////////////////////////////////////////
+
+6. url결정/화면결정 : /quiz->Controller.java
+7. view.jsp
+
+
+
+1.[web.xml]
+ <!-- 시작 페이지 설정 -->
+ <!-- 세션 초기화 시간 설정 -->
+ <!-- 에러 페이지 설정 -->
+ <!-- 위의 에러를 제외한 모든 예외 발생 시 보여질 에러 페이지 설정 -->
+ <!-- 스프링의 인코딩 필터 클래스를 이용해서 post 방식에서 파라미터를 UTF-8로 처리할 수 있도록 설정 -->
+ <!-- 리스너 설정 WEB-INF 폴더에 있는 application-context.xml 파일을 읽어서 빈들에 메모리 할당을 하고
+ 모든 곳에서 사용할 수 있도록 설정을 해줍니다. -->
+ <!-- 리스너 설정 WEB-INF 폴더에 있는 application-context.xml 파일을 읽어서 빈들에 메모리 할당을 하고
+ 모든 곳에서 사용할 수 있도록 설정을 해줍니다. -->
+2.[pom.xml]
+ <!-- 라이브러리설정 -->
+3.[applicationContext.xml] 생성​
+4.[dispatcher-servlet.xml] 생성 및 작성
+ <!-- ViewResolver 설정 -->
+ <!-- 사용하고자 하는 ViewResolver -->
+ <!-- 및 그에 필요한 설정  -->
+5. [controller]
+​6.[DTO] 
+6-1.[Report]
+7.[service]
+​8.[view] .jsp

@@ -1,0 +1,24 @@
+
+폴더구조
+0디바이스
+1usecase 대상
+2category
+3세분류
+
+template pattern - 변경하고픈 부분만 abstract해놓고 각각 overriding한다
+
+factory pattern - 요청하는 instance를 찾아 생성해서 반환한다.
+
+----------------------
+front controller pattern
+
+command pattern
+---------------
+
+MVC2 패턴
+
+
+html->htm->jsp
+
+
+데이터베이스 고치는 애들은 redirect해줘야한다
